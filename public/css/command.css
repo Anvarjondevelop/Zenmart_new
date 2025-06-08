@@ -1,0 +1,298 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/* FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+  position: relative;
+  width: 1320px;
+  height: auto;
+  display: flex;
+}
+
+/* NAVBAR FRAME */
+
+.navbar_frame {
+  position: relative;
+  width: 100%;
+  height: 145px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: rgb(68, 50, 151);
+}
+.navbar_frame .container {
+  position: relative;
+  padding: 20px 0px 14px;
+  width: 1320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.navbar_frame .navbar_top {
+  position: relative;
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+}
+.navbar_frame .navbar_top img {
+  height: 36px;
+  width: 117px;
+  margin-right: 76px;
+}
+.navbar_frame .nav_search_frame {
+  position: relative;
+  width: 650px;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.nav_search_frame .search_box {
+  padding: 10px 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar_frame .search_box .category_list {
+  width: 166px;
+  height: 30px;
+  border-right: 1px solid rgb(214, 214, 214);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar_frame .category_list select {
+  width: 140px;
+  height: 30px;
+
+  border: none;
+  outline: none;
+
+  color: rgb(4, 30, 66);
+  font-family: Jost;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.navbar_frame .search_box input {
+  width: 405px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+
+  border: none;
+  outline: none;
+  margin-left: 12px;
+
+  color: rgb(98, 105, 116);
+  font-family: Jost;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.nav_search_frame .search_icon_box {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  border-radius: 0px 6px 6px 0px;
+  background: rgb(245, 195, 75);
+}
+.navbar_frame .search_icon_box img {
+  width: 16px;
+  height: 16px;
+  margin-left: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_frame .navbar_top_menu {
+  margin-left: 59px;
+  width: 416px;
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_top_menu {
+  width: 416px;
+  height: 50px;
+  margin-left: 59px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav_top_menu .top_menu_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar_frame .top_menu_box .box_icon_box {
+  width: 44px;
+  height: 40px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  margin-right: 17px;
+}
+.navbar_frame .box_icon_box img {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 77px;
+}
+.navbar_frame .box_info_box {
+  display: flex;
+  flex-direction: column;
+}
+.navbar_frame .box_info_box span {
+  color: rgb(255, 255, 255);
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.navbar_frame .box_info_box strong {
+  color: rgb(255, 255, 255);
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.navbar_frame .box_icon_box .basket_count {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(11, 30, 64);
+  font-family: "Jost";
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0%;
+  text-align: left;
+
+  background: rgb(245, 195, 75);
+  top: -2px;
+  right: -3px;
+}
+.navbar_bott {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: row;
+
+  border-top: 1px solid #5746a1;
+}
+.navbar_bott .navbar_bot_menu_box {
+  margin-top: 10px;
+  width: auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+}
+.navbar_bot_menu_box .browse_box {
+  width: 185px;
+  height: 30px;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  border-right: 1px solid #5746a1;
+}
+.navbar_frame .browse_box img {
+  margin-right: 10px;
+  width: 20px;
+  height: 18px;
+}
+.navbar_frame .browse_box span {
+  color: rgb(255, 255, 255);
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+.navbar_route_menu {
+  margin-left: 12px;
+  width: 674px;
+  display: flex;
+  flex-direction: row;
+}
+.navbar_route_menu .router_menu {
+  margin-right: 20px;
+  width: auto;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+}
+.navbar_frame .router_menu a {
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+.router_menu a:active {
+  color: rgb(245, 195, 75);
+}
+.sorting_menu {
+  display: flex;
+  flex-direction: row;
+}
+.navbar_frame .sorting_menu span {
+  margin-left: 20px;
+
+  color: rgb(255, 255, 255);
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+.navbar_frame .sorting_menu a span:hover {
+  color: rgb(245, 195, 75);
+  transition: 0.5s;
+}
